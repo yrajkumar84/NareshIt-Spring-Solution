@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ 	<bean id="honda" class="com.beans.Bike" abstract="true"> 
+		<property name="id" value="Ts 10 OD"></property>
+    	<property name="make" value="Hondacity"></property>
+    	<property name="engine" value="258"></property>
+    </bean>
+    
+    <bean id="pulsar" class="com.beans.Bike" parent="honda"> 
+		<property name="id" value="MH 12 OD"></property>
+    	
+    </bean>
+     <bean id="pulsar1" class="com.beans.Bike" parent="honda"> 
+		<property name="id" value="MH fd 345"></property>
+    	
+    </bean>
+
+    <!-- more bean definitions for data access objects go here -->
+
+	<bean id="u1" class="com.beans.Bank" abstract="true"> 
+		<property name="accno" value="SBIIN0123"></property>
+    	<property name="accName" value="Raj"></property>
+    	<property name="Addrs" value="Akole"></property>
+    </bean>
+    
+    <bean id="u2" class="com.beans.Bank" parent="u1"> 
+		<property name="accno" value="SBIIN0123"></property>
+    	
+    </bean>
+</beans>
