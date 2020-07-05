@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ 	<bean id="dtdc" class="com.beans.DTDC">  </bean>
+    <bean id="bluedart" class="com.beans.BlueDart"></bean>
+	<bean id="fpk" class="com.beans.Flipkart">
+		<property name="courier" ref="dtdc"></property>
+	</bean>
+   
+		
+    <!-- more bean definitions for data access objects go here -->
+
+</beans>
