@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ 	<bean id="st" class="com.beans.StudetSetEx"> 
+ 		<property name="name">
+ 			<set>
+ 				<value>Rajkumar</value>
+ 				<value>Meet</value>
+ 			</set>
+ 		</property>
+ 		<property name="Addrs">
+ 			<list>
+ 				<value>Akole</value>
+ 				<value>Nawle wadi</value>
+ 			</list>
+ 		</property>
+ 		<property name="State">
+ 			<map>
+ 				<entry key="Rajkumar" value="UP"></entry>
+ 				<entry key="Meet" value="MH"></entry>
+ 			</map>
+ 		</property>
+ 		<property name="Dist">
+ 			<map>
+ 				<entry key="Rajkumar" value="Pune"></entry>
+ 				<entry key="Meet" value="Ahmednagar"></entry>
+ 			</map>
+ 		</property>
+ 		<property name="gender">
+ 			<props>
+ 				<prop key="Rajkumar">Male</prop>
+ 				<prop key="Meet">FeMale</prop>
+ 			</props>
+ 		</property>
+ 	 </bean>
+ 	 
+ 	
+</beans>
